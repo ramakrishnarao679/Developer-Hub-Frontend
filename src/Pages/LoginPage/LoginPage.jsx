@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import { TextField, Button } from "@mui/material";
-import "./loginPage.css";
+import "./LoginPage.css";
 import axios from "axios";
 import HomePage from "../HomePage/HomePage";
 import { useNavigate } from "react-router-dom";
