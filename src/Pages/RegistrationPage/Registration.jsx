@@ -24,7 +24,7 @@ export default function Registration() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/register",
+        "https://developerhubbackend.onrender.com/register",
         objData,
       );
       console.log(response.data);

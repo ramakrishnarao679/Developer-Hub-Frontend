@@ -4,7 +4,7 @@ import { TextField, Button } from "@mui/material";
 import "./LoginPage.css";
 import axios from "axios";
 import HomePage from "../HomePage/HomePage";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function LoginPage() {
   const [objData, setObjData] = useState({
@@ -23,7 +23,7 @@ export default function LoginPage() {
     e.preventDefault();
     try {
       const response = await axios
-        .post(`http://localhost:5000/login`, objData)
+        .post(`https://developerhubbackend.onrender.com/login`, objData)
         .then((response) => {
           localStorage.setItem("token", response.data.token);
           navigate("/dashboard");
