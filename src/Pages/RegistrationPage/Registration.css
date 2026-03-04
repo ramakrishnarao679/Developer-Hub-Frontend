@@ -1,14 +1,20 @@
 body{
     background-color: aliceblue;
+    padding:0px;
+    margin:0px;
+    font-family: arial, sans-serif;
 }
 .container-register{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:2;
+    gap:10px;
     background-color:white;
-    height:110vh;
-    width:30%;
+    width:90%;
+    max-width: 400px;
+    padding:50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .container-register h1{
     text-align: center;
@@ -17,4 +23,15 @@ body{
 .loginpage{
     text-decoration: none;
     font-weight: bold;
+}
+
+@media (min-width:768px){
+    .container-register{
+        width:40%;
+    }
+}
+@media (min-width:1024){
+    .container-register{
+        width: 30%;
+    }
 }
